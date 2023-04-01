@@ -1,0 +1,32 @@
+{
+  "name": "Zombie hunter arena cheat",
+  "description": "Cheat lol",
+  "version": "0.0.1",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "https://pixel-cave.com/games/zh/**"
+  ],
+  "manifest_version": 2,
+  "content_scripts": [
+      {
+        "matches": [
+          "https://pixel-cave.com/games/zh/"
+        ],
+        "js": [
+          "inject.js"
+        ],
+        "css": [
+          "styles.css"
+        ],
+        "run_at": "document_start",
+        "all_frames": true
+      }
+  ],
+  "web_accessible_resources": ["cheat.js"],
+  "background": {
+    "scripts": [
+        "background.js"
+    ]
+  }
+}
