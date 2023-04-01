@@ -1,1 +1,0 @@
-Made for firefox manifest v2.
